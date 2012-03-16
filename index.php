@@ -1,4 +1,8 @@
 <?php
+ini_set('display_errors', 1);
+error_reporting(-1);
+
+
 set_include_path(
 	'../Validation/library'
 	. PATH_SEPARATOR . get_include_path()
