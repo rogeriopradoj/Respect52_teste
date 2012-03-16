@@ -15,7 +15,9 @@ $respectLoader->register();
 //use Respect\Validation\Validator as v;
 $number = 123;
 //$teste = v::numeric()->validate($number); //true
-$teste = Respect52_Validation_Validator::numeric()->validate($number); //true
+//$teste = Respect52_Validation_Validator::numeric()->validate($number); //true
+$validator = new Respect52_Validation_Validator;
+$teste = $validator->numeric()->validate($number); //true
 
 var_dump($teste);
 
