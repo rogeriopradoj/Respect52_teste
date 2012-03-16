@@ -4,7 +4,7 @@ set_include_path(
 	. PATH_SEPARATOR . get_include_path()
 );
 require_once 'SplClassLoader.php';
-$respectLoader = new \SplClassLoader();
+$respectLoader = new SplClassLoader();
 $respectLoader->register();
 
 
